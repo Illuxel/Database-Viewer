@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DBViewForm</class>
+ <widget class="QMainWindow" name="DBViewForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Current DB: %1 Current user: %2</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../content.qrc">
+    <normaloff>:/window/images/icons8_database.ico</normaloff>:/window/images/icons8_database.ico</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>64</width>
+    <height>64</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="TableTabsWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="ButtonLayout">
+      <item>
+       <widget class="QPushButton" name="AddRowButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="RemoveRowButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SearchButton">
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBack">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuQueries">
+     <property name="title">
+      <string>Queries</string>
+     </property>
+     <addaction name="QueryList"/>
+     <addaction name="separator"/>
+     <addaction name="QueryAdd"/>
+    </widget>
+    <addaction name="menuQueries"/>
+    <addaction name="separator"/>
+    <addaction name="RefreshButton"/>
+    <addaction name="BackButton"/>
+   </widget>
+   <widget class="QMenu" name="menuSave">
+    <property name="title">
+     <string>Save</string>
+    </property>
+    <addaction name="PrintButton"/>
+    <addaction name="separator"/>
+    <addaction name="SaveChangesButton"/>
+    <addaction name="DiscardChangesButton"/>
+   </widget>
+   <addaction name="menuBack"/>
+   <addaction name="menuSave"/>
+  </widget>
+  <widget class="QStatusBar" name="connectionStatus"/>
+  <action name="RefreshButton">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="BackButton">
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </action>
+  <action name="SaveChangesButton">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save changes</string>
+   </property>
+  </action>
+  <action name="PrintButton">
+   <property name="text">
+    <string>Print table</string>
+   </property>
+  </action>
+  <action name="QueryList">
+   <property name="text">
+    <string>List</string>
+   </property>
+  </action>
+  <action name="QueryAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="QueryRemove">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="DiscardChangesButton">
+   <property name="text">
+    <string>Discard changes</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../content.qrc"/>
+ </resources>
+ <connections/>
+</ui>

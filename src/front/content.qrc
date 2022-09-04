@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/window">
+        <file>images/icons8_database.ico</file>
+        <file>images/icons8_remove.ico</file>
+    </qresource>
+    <qresource prefix="/login">
+        <file>images/icons8_login.ico</file>
+    </qresource>
+    <qresource prefix="/querylist">
+        <file>images/icons8_list.ico</file>
+        <file>images/icons8_start.ico</file>
+    </qresource>
+</RCC>
