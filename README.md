@@ -2,6 +2,10 @@
 
 Simple project that allows accessing database and quering data.
 
+# Deps
+
+Widgets Style - https://github.com/Jorgen-VikingGod/Qt-Frameless-Window-DarkStyle
+
 # App usage
 
 Login to database. 
