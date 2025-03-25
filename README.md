@@ -1,6 +1,6 @@
 # Description
 
-Simple project that allows accessing database and quering data.
+Simple program in C++ that allows accessing databases and querying data.
 
 # Deps
 
